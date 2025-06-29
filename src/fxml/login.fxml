@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.LoginController"
+      spacing="15"
+      alignment="CENTER"
+      stylesheets="@../resources/css/style.css"
+      styleClass="auth-container">
+    
+    <padding>
+        <Insets top="30" right="40" bottom="30" left="40"/>
+    </padding>
+    
+    <Label text="🔒 MediTrack Login" styleClass="auth-title" />
+    
+    <TextField fx:id="usernameField" promptText="Username" />
+    <PasswordField fx:id="passwordField" promptText="Password" />
+    
+    <Button fx:id="loginButton" text="Login" onAction="#handleLogin" />
+    <Hyperlink text="Don't have an account? Register" onAction="#openRegisterPage" />
+    <Label fx:id="errorLabel" styleClass="error-label" />
+    
+</VBox>

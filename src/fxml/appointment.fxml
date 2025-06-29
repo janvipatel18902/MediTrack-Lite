@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.AppointmentController"
+      spacing="10"
+      stylesheets="@../resources/css/style.css">
+  
+  <padding>
+    <Insets top="20" right="20" bottom="20" left="20"/>
+  </padding>
+  <Label text="Add Appointment" styleClass="title-label" />
+
+  <TextField fx:id="doctorField" promptText="Doctor Name" />
+  <DatePicker fx:id="datePicker" promptText="Date" />
+  <TextField fx:id="timeField" promptText="Time (e.g., 10:00 AM)" />
+  <TextField fx:id="reasonField" promptText="Reason (e.g., Consultation)" />
+  
+  <HBox spacing="10">
+    <Button text="Add" onAction="#addAppointment" />
+    <Button text="Clear" onAction="#clearForm" />
+  </HBox>
+  
+  <Label fx:id="statusLabel" />
+  
+  <Separator />
+  
+  <HBox spacing="10">
+    <Label text="Filter:" styleClass="label" />
+
+    <ComboBox fx:id="filterComboBox" prefWidth="150"/>
+    <TextField fx:id="searchField" promptText="Search by Doctor/Reason" />
+    <Button text="Delete Selected" onAction="#deleteSelectedAppointment" />
+  </HBox>
+  
+  <ListView fx:id="appointmentList" prefHeight="200" />
+</VBox>

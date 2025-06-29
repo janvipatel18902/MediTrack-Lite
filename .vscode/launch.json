@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run MediTrack App",
+      "request": "launch",
+      "mainClass": "Main",
+      "cwd": "${workspaceFolder}",
+      "vmArgs": "--module-path lib --add-modules javafx.controls,javafx.fxml -cp lib/sqlite-jdbc-3.36.0.3.jar -Dprism.order=sw -Djava.library.path=lib"
+    }
+  ]
+}

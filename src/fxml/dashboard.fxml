@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.DashboardController"
+      spacing="10"
+      stylesheets="@../resources/css/style.css">
+  
+  <padding>
+    <Insets top="20" right="20" bottom="20" left="20"/>
+  </padding>
+  
+  <!-- Top Bar with Profile Icon and Logout -->
+  <HBox spacing="10" alignment="TOP_RIGHT">
+    <ImageView fitHeight="24" fitWidth="24">
+      <image>
+        <Image url="@../resources/img/profile.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout" />
+  </HBox>
+  
+  <!-- Dashboard Header -->
+  <Label text="📊 Dashboard" styleClass="title-label" />
+  
+  <!-- Medicine List -->
+  <Label text="🩺 Ongoing Medicines:" styleClass="label" />
+  <ListView fx:id="todayMedicinesList" prefHeight="150" />
+  
+  <!-- Appointments List -->
+  <Label text="📅 Appointments (Next 7 Days):" styleClass="label" />
+  <ListView fx:id="todayAppointmentsList" prefHeight="150" />
+
+  
+</VBox>

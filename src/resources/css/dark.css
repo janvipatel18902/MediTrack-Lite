@@ -1,0 +1,125 @@
+/* ========== DARK.CSS ========== */
+.root {
+    -fx-background-color: #121212;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Global label style */
+.label, .tab-label {
+    -fx-text-fill: #f5f5f5;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-opacity: 1.0;
+}
+
+/* Headings (e.g. Add Medicine, Dashboard, etc.) */
+.heading, .subheading, .title-label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* Tabs and tab header styling */
+.tab-pane .tab-header-area {
+    -fx-background-color: #1e1e1e;
+}
+
+.tab {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: #f5f5f5;
+}
+
+.tab:selected {
+    -fx-background-color: #333333;
+    -fx-text-fill: #ffffff;
+}
+
+.tab .tab-label {
+    -fx-text-fill: #f5f5f5;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #0078d7;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+.button:hover {
+    -fx-background-color: #005ea6;
+}
+
+/* Inputs */
+.text-field,
+.combo-box,
+.date-picker,
+.text-area {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #333333;
+    -fx-background-radius: 6;
+    -fx-prompt-text-fill: #aaaaaa;
+}
+
+/* Toggle buttons (e.g. dark mode) */
+.toggle-button {
+    -fx-background-color: #424242;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+/* ListViews */
+.list-view {
+    -fx-background-color: #1c1c1c;
+    -fx-border-color: #3a3a3a;
+}
+
+.list-cell {
+    -fx-background-color: #262626;
+    -fx-text-fill: white;
+    -fx-border-color: #3a3a3a;
+    -fx-padding: 10px;
+}
+
+.list-cell:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+/* Specific Buttons */
+#logoutButton {
+    -fx-background-color: #e53935;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+}
+
+#logoutButton:hover {
+    -fx-background-color: #c62828;
+}
+
+#darkModeToggle {
+    -fx-background-color: #424242;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+/* Separator line */
+.separator *.line {
+    -fx-border-color: #444444;
+}
+
+/* Tooltip (optional styling) */
+.tooltip {
+    -fx-background-color: #333;
+    -fx-text-fill: #fff;
+}
+
+/* ComboBox arrow styling */
+.combo-box .arrow-button {
+    -fx-background-color: #333;
+}
+
+.combo-box .arrow {
+    -fx-background-color: white;
+}

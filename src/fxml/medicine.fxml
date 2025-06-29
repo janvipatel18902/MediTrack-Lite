@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.MedicineController"
+      spacing="10"
+      stylesheets="@../resources/css/style.css">
+    
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    
+    <Label text="Add Medicine" styleClass="title-label" />
+
+    
+    <TextField fx:id="nameField" promptText="Medicine Name" />
+    <TextField fx:id="dosageField" promptText="Dosage (e.g., 2 times/day)" />
+    <DatePicker fx:id="startDatePicker" promptText="Start Date" />
+    <TextField fx:id="durationField" promptText="Duration (days)" />
+    
+    <HBox spacing="10">
+        <Button text="Add" onAction="#addMedicine" />
+        <Button text="Edit" onAction="#editMedicine" />
+        <Button text="Delete" onAction="#deleteMedicine" />
+        <Button text="Clear" onAction="#clearForm" />
+    </HBox>
+    
+    <Label fx:id="statusLabel" />
+    
+    <Separator />
+    
+    <TextField fx:id="searchField" promptText="Search by name/dosage" />
+    <ListView fx:id="medicineList" prefHeight="200" />
+</VBox>

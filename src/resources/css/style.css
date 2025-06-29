@@ -1,0 +1,113 @@
+/* Root styling for the entire app */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #f5f8fa;
+    -fx-padding: 20px;
+}
+
+/* General label styling */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+/* Headings */
+.label.heading, .form-title, .auth-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2a2a2a;
+    -fx-padding: 0 0 10 0;
+}
+
+/* Text fields & Password fields */
+.text-field, .password-field, .date-picker {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 6px 10px;
+    -fx-font-size: 13px;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #4e9af1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 6px 14px;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #3c85db;
+}
+
+.button:focused {
+    -fx-border-color: #2e71c8;
+}
+
+/* Special refresh button */
+.button.refresh-button {
+    -fx-background-color: #4e9af1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 6px 16px;
+    -fx-background-radius: 8px;
+    -fx-graphic-text-gap: 8px;
+}
+
+.button.refresh-button:hover {
+    -fx-background-color: #3c85db;
+}
+
+/* ComboBox */
+.combo-box {
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ccc;
+}
+
+/* ListView */
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: #dcdcdc;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-cell-size: 40px;
+    -fx-font-size: 13px;
+}
+
+/* TabPane Tabs */
+.tab-pane .tab-header-area {
+    -fx-background-color: #e8edf3;
+}
+
+.tab {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.tab:selected {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-width: 0 0 2 0;
+}
+
+/* Status/Error Label */
+.status-label, .error-label {
+    -fx-text-fill: red;
+    -fx-font-size: 12px;
+    -fx-padding: 5px 0 0 0;
+    -fx-wrap-text: true;
+}
+
+/* Hyperlink */
+.hyperlink {
+    -fx-text-fill: #4e9af1;
+    -fx-font-size: 12px;
+    -fx-underline: true;
+}
